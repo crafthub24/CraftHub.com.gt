@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style4.css">
+    <title>Formulario</title>
+</head>
+<body>
+
+    <div class="navbar">
+        <div id="company-name">CraftHub</div>
+        <a href="index.html">Home</a>
+        <a href="#" onclick="showBox('News')">News</a>
+        <a href="#" onclick="showBox('Contact')">Contact</a>
+        <a href="#" onclick="showBox('About Us')">About us</a>
+    </div>
+
+    <!-- FORMULARIO -->
+    <div id="wrapper">
+        <h2 class="titulo">Envio de Formulario</h2>
+        <form action="https://formsubmit.co/crafthub2024@gmail.com" method="POST" enctype="multipart/form-data">
+            <label for="Nombre">Nombre</label>
+            <input type="text" name="name">
+    
+            <label for="email">Correo Electronico</label>
+            <input type="email" name="email">
+    
+            <label for="subject">Asunto</label>
+            <input type="text" name="subject">
+
+            <label for="subject">Numero de telefono</label>
+            <input type="tel" name="cell phone">
+    
+            <label for="comments">Comentarios (cajas, bolsas, stickers, etc)</label>
+            <textarea name="comments" cols="15" rows="5"></textarea>
+    
+            <label for="adjunto">Adjuntar Archivo (LOGO O IMAGEN DE TU EMPRESA)</label>
+            <input type="file" name="adjunto">
+    
+            <input type="submit" value="Enviar">
+
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+            <input type="hidden" name="_captcha" value="false">
+        </form>
+    </div>
+
+</body>
+</html>
+
